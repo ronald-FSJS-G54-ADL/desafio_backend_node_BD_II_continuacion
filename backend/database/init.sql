@@ -1,0 +1,9 @@
+CREATE DATABASE likeme;
+
+CREATE TABLE posts (
+    id SERIAL PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    img VARCHAR(255) NOT NULL,
+    descripcion TEXT NOT NULL,
+    likes INTEGER DEFAULT 0
+);
